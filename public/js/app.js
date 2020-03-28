@@ -1,6 +1,3 @@
-console.log("Client side server setup completed.")
-
-   
 
 const loc = document.querySelector('form')
 const search = document.querySelector('input')
