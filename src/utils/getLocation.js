@@ -10,12 +10,13 @@ const location = (lat , long, callback) =>{
             callback(undefined,{
                 summary : body.daily.data[0].summary,
                 tempHigh : body.daily.data[0].temperatureHigh,
-                tempLow : body.daily.data[0].temperatureLow
-
+                tempLow : body.daily.data[0].temperatureLow,
+                uv : body.daily.data[0].uvIndex
             })
         }
     })
 }
 
+//72.83333,18.96667  https://api.darksky.net/forecast/88b019e1aa1f1773d3170362748e07c6/72.83,18.966?units=si
 module.exports = location;
 

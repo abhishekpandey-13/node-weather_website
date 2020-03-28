@@ -65,7 +65,7 @@ app.get('/weather', (req, res) => {
         long=longitude
         lat = latitude
         //long=data.longitude
-        location(lat,long,(error,{summary,tempHigh,tempLow})=>{   //used destructing
+        location(lat,long,(error,{summary,tempHigh,tempLow,uv})=>{   //used destructing
             if(error){
                 return res.send({error})
             }
@@ -75,7 +75,8 @@ app.get('/weather', (req, res) => {
                 place : le,
                 summary: summary,
                 HighTemp : tempHigh,
-                LowTemp : tempLow
+                LowTemp : tempLow,
+                uvIndex : uv 
             })
         })
     })

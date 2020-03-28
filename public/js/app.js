@@ -19,7 +19,7 @@ loc.addEventListener('submit', (e)=>{
                 msg1.textContent = data.error
             }else{
                 msg1.textContent = data.place
-                msg2.textContent = data.summary + "With a high of  " + data.HighTemp + " and a low of " + data.LowTemp
+                msg2.textContent = data.summary + "With a high of  " + data.HighTemp + " and a low of " + data.LowTemp + " With a UV index of : " + data.uvIndex
             }
         })
     })
