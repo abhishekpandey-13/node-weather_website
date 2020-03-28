@@ -12,7 +12,7 @@ loc.addEventListener('submit', (e)=>{
     msg2.textContent = ''
     // const location = search.value
     // console.log(location)
-    const url = 'http://localhost:3000/weather?address='
+    const url = '/weather?address='
     fetch(url+search.value).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
