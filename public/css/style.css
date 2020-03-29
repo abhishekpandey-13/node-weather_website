@@ -14,12 +14,9 @@ body {
     flex-grow: 1;
 }
 
-footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 0;
-}
+.footer {
+    position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;
+ }
 
 header {
     margin-top: 16px;

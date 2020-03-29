@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <title>Weather</title>
-    <link rel="icon" href="/img/weather.png">
-    <link rel="stylesheet" href="../../public/css/style.css">
-</head>
-
-<body>
     <div class="main-content">
         {{>header}}
 
         <p>Use this site to get your weather!</p>
         <form>
-            <input placeholder="location">
-            <button class="submit" type="submit">Search</button>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Location</label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control" placeholder="location">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2 submit">Search</button>
+            </div>
         </form>
         <p id="msg1">
 
