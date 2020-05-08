@@ -50,11 +50,6 @@ app.get('/weather', (req, res) => {
             error: "No address provided"
         })
     }
-    // console.log(req.query.address)
-    // res.send({
-    //     forecast: 'It is snowing',
-    //     location: req.query.address
-    // })
 
     getLocation(address ,(error,{latitude,longitude,le}={})=>{  //used destructing also set up an empty default object.
 
